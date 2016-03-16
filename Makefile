@@ -5,6 +5,8 @@ REPO = quay.io/assemblyline/ok
 
 all: $(TARGET)
 
+$(TARGET): export GOOS=linux
+$(TARGET): export GOARCH=amd64
 $(TARGET): $(TARGET).go
 	go build -ldflags $(LDFLAGS) $(TARGET).go
 
