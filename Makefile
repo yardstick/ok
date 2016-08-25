@@ -1,7 +1,7 @@
 GO = go
 LDFLAGS = -s
 TARGET = ok
-REPO = quay.io/assemblyline/ok
+REPO = yardstick/ok
 
 all: $(TARGET)
 
