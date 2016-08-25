@@ -7,7 +7,7 @@ A webserver in a (tiny) docker container that returns 200 ok for every request o
 ## Ready Made
 
 ```
-docker run -p 8888:8888 quay.io/assemblyline/ok
+docker run -p 8888:8888 yardstick/ok
 ```
 
 ## Build Your Own
@@ -15,6 +15,8 @@ docker run -p 8888:8888 quay.io/assemblyline/ok
 change `REPO` in the Makefile
 
 ```
+make
+make build
 make release
 ```
 
